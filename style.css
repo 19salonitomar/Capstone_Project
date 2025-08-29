@@ -1,0 +1,253 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    color: #333;
+}
+
+.navbar-brand img {
+    height: 30px;
+}
+
+.navbar-brand span.fw-bold {
+    font-size: 1.25rem; 
+    color: #4a4a4a;
+}
+
+.navbar-brand span.text-secondary {
+    color: #b7b7b7 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #555 !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000 !important;
+}
+
+
+.custom-button {
+    background-color: #4a4a4a; 
+    border-color: #4a4a4a;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #333; 
+    border-color: #333;
+    color: #fff;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #dcdcdc;
+}
+
+#hero .display-4 {
+    font-size: calc(1.75rem + 2vw); 
+}
+
+#hero img {
+    max-height: 500px; 
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Information Section */
+#information .card {
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#information .card-title {
+    color: #4a4a4a;
+}
+
+#information .btn-link {
+    color: #4CAF50; 
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#information .btn-link:hover {
+    text-decoration: underline;
+}
+
+#information .col-lg-8 .card {
+    border: none;
+    box-shadow: none;
+}
+
+#information .card img.rounded-start {
+    height: 100%;
+    object-fit: cover;
+}
+
+#informationAccordion .accordion-button {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+#informationAccordion .accordion-button:not(.collapsed) {
+    color: #4a4a4a;
+    background-color: #e2e6ea;
+    box-shadow: none;
+}
+#informationAccordion .accordion-body {
+    background-color: #ffffff;
+}
+#informationAccordion .accordion-body img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Courses Section */
+#courses {
+    background-color: #f7f7f7;
+}
+
+#courses .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+#courses .card:hover {
+    transform: translateY(-5px);
+}
+
+#courses .card-img-top {
+    height: 180px; 
+    object-fit: cover;
+}
+
+#courses .card-body {
+    padding: 1.5rem;
+}
+
+#courses .card-title {
+    color: #4a4a4a;
+    font-size: 1.3rem;
+}
+
+#courses .card-text:first-of-type { 
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+#courses .card-text:last-of-type { 
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #6c757d;
+}
+
+
+#thesis-exhibit .card {
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#thesis-exhibit .card img.rounded-start {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#thesisAccordion .accordion-button {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+#thesisAccordion .accordion-button:not(.collapsed) {
+    color: #4a4a4a;
+    background-color: #e2e6ea;
+    box-shadow: none;
+}
+#thesisAccordion .accordion-body {
+    background-color: #ffffff;
+}
+#thesisAccordion .accordion-body img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f7f7f7 !important;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer .nav-link {
+    color: #555 !important;
+    font-weight: 400;
+}
+
+footer .nav-link:hover {
+    color: #000 !important;
+}
+
+/* Responsive adjustments */
+@media (min-width: 992px) {
+    #hero .row {
+        min-height: 500px; 
+    }
+    #hero img {
+        height: 100%;
+        object-fit: cover;
+    }
+    #information .col-lg-8 .card-body {
+        padding-left: 0; 
+        padding-right: 0; 
+    }
+    #information .col-lg-4 .card .row {
+        height: 150px; 
+    }
+    #information .col-lg-4 .card .row .col-md-5,
+    #information .col-lg-4 .card .row .col-md-7 {
+        height: 100%;
+    }
+    #thesis-exhibit .col-lg-4 .card .row {
+        height: 150px; 
+    }
+    #thesis-exhibit .col-lg-4 .card .row .col-md-5,
+    #thesis-exhibit .col-lg-4 .card .row .col-md-7 {
+        height: 100%;
+    }
+}
+
+/* For smaller screens adjustments */
+@media (max-width: 991.98px) {
+    .navbar-brand span.fw-bold {
+        font-size: 1rem;
+    }
+    .navbar-toggler {
+        font-size: 0.8rem; 
+    }
+    #hero .display-4 {
+        font-size: 2.5rem;
+    }
+    #information .col-12:first-child .card-body {
+        padding: 1rem;
+    }
+    #information .col-12:first-child .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+    #information .accordion-button {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    #thesis-exhibit .accordion-button {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    #thesis-exhibit .ratio {
+        height: 200px; 
+    }
+}
